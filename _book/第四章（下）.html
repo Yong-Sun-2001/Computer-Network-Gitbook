@@ -1,0 +1,435 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第四章（下） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="第五章.html" />
+    
+    
+    <link rel="prev" href="第四章（上）.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="第一章.html">
+            
+                <a href="第一章.html">
+            
+                    
+                    第一章
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="第二章.html">
+            
+                <a href="第二章.html">
+            
+                    
+                    第二章
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第三章.html">
+            
+                <a href="第三章.html">
+            
+                    
+                    第三章
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第四章（上）.html">
+            
+                <a href="第四章（上）.html">
+            
+                    
+                    第四章（上）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="第四章（下）.html">
+            
+                <a href="第四章（下）.html">
+            
+                    
+                    第四章（下）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="第五章.html">
+            
+                <a href="第五章.html">
+            
+                    
+                    第五章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第四章（下）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x56DB;&#x7AE0;&#xFF08;&#x4E0B;&#xFF09;&#x2014;&#x2014;&#x7F51;&#x7EDC;&#x5C42;">&#x7B2C;&#x56DB;&#x7AE0;&#xFF08;&#x4E0B;&#xFF09;&#x2014;&#x2014;&#x7F51;&#x7EDC;&#x5C42;</h1>
+<h2 id="&#x91CD;&#x70B9;">&#x91CD;&#x70B9;</h2>
+<ol>
+<li>ICMP&#x534F;&#x8BAE;&#xFF1A;&#x8BE2;&#x95EE;&#x62A5;&#x6587;&#x3001;&#x5DEE;&#x9519;&#x62A5;&#x6587;</li>
+<li>&#x8DEF;&#x7531;&#x7B97;&#x6CD5;&#xFF1A;&#x9759;&#x6001;/&#x52A8;&#x6001;&#x8DEF;&#x7531;&#x7B97;&#x6CD5;</li>
+<li>&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x534F;&#x8BAE;&#xFF1A;&#x5185;&#x90E8;/&#x5916;&#x90E8;&#x7F51;&#x5173;&#x534F;&#x8BAE;</li>
+<li>IP&#x591A;&#x64AD;&#xFF1A;&#x591A;&#x64AD;IP&#x5730;&#x5740;&#x3001;&#x786C;&#x4EF6;&#x591A;&#x64AD;</li>
+</ol>
+<h2 id="&#x5185;&#x5BB9;">&#x5185;&#x5BB9;</h2>
+<ol>
+<li><p>ICMP:Internet Control MessageProtocol &#x7F51;&#x9645;&#x63A7;&#x5236;&#x62A5;&#x6587;&#x534F;&#x8BAE;</p>
+</li>
+<li><p>ICMP&#x62A5;&#x6587;&#x683C;&#x5F0F;</p>
+<p><img src="images/image-20211114145021516.png" alt="image-20211114145021516" style="zoom:67%;"></p>
+</li>
+<li><p>ICMP&#x62A5;&#x6587;&#x79CD;&#x7C7B;&#xFF1A;ICMP&#x5DEE;&#x9519;&#x62A5;&#x544A;&#x62A5;&#x6587;&#x548C; ICMP &#x8BE2;&#x95EE;&#x62A5;&#x6587;</p>
+</li>
+<li><p>ICMP&#x5DEE;&#x9519;&#x62A5;&#x544A;&#x62A5;&#x6587;&#xFF1A;&#x5411;&#x6E90;&#x7AD9;&#x70B9;&#x62A5;&#x544A;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5E94;&#x7B54;&#x3002;&#x53EF;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ol>
+<li>&#x7EC8;&#x70B9;&#x4E0D;&#x53EF;&#x8FBE;&#xFF1A;&#x7F51;&#x7EDC;&#x4E0D;&#x53EF;&#x8FBE;&#x3001;&#x4E3B;&#x673A;&#x4E0D;&#x53EF;&#x8FBE;&#x3001;&#x534F;&#x8BAE;&#x4E0D;&#x53EF;&#x8FBE;&#x3001;&#x7AEF;&#x53E3; &#x4E0D;&#x53EF;&#x8FBE;&#x3001;&#x9700;&#x5206;&#x7247;&#x4F46;DF&#x4E3A;1&#x3001;&#x6E90;&#x8DEF;&#x7531;&#x5931;&#x8D25;&#x7B49;6&#x79CD;</li>
+<li>&#x65F6;&#x95F4;&#x8D85;&#x8FC7;&#xFF1A;&#x8DEF;&#x7531;&#x5668;&#x6536;&#x5230;TTL&#x4E3A;0&#x7684;&#x6570;&#x636E;&#x62A5;&#x65F6;&#xFF0C;&#x4E22;&#x5F03;&#x4E14;&#x62A5;&#x544A;</li>
+<li>&#x53C2;&#x6570;&#x95EE;&#x9898;&#xFF1A;&#x6536;&#x5230;&#x7684;&#x6570;&#x636E;&#x62A5;&#x9996;&#x90E8;&#x6709;&#x5B57;&#x6BB5;&#x4E0D;&#x6B63;&#x786E;&#x65F6;</li>
+<li>&#x6539;&#x53D8;&#x8DEF;&#x7531;&#xFF1A;&#x8DEF;&#x7531;&#x5668;&#x53D1;&#x7ED9;&#x4E3B;&#x673A;&#x8BA9;&#x5176;&#x77E5;&#x9053;&#x4E0B;&#x6B21;&#x5E94;&#x5C06;&#x6570;&#x636E;&#x62A5;&#x53D1;&#x9001;&#x7ED9; &#x53E6;&#x5916;&#x7684;&#x8DEF;&#x7531;&#x5668;</li>
+</ol>
+</li>
+<li><p>ICMP&#x5DEE;&#x9519;&#x62A5;&#x544A;&#x62A5;&#x6587;&#x7684;&#x6570;&#x636E;&#x90E8;&#x5206;&#xFF1A;&#x5305;&#x542B;ICMP&#x5DEE;&#x9519;&#x62A5;&#x544A;&#x62A5;&#x6587;&#x7684;&#x524D;8&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x518D;&#x52A0;&#x4E0A;<strong>&#x5F15;&#x8D77;&#x9519;&#x8BEF;&#x7684;IP&#x6570;&#x636E;&#x62A5;&#x7684;&#x9996;&#x90E8;&#x548C;&#x6570;&#x636E;&#x5B57;&#x6BB5;&#x7684;&#x524D;8&#x4E2A;&#x5B57;&#x8282;</strong>&#x3002;</p>
+<p><img src="images/image-20211114145448125.png" alt="image-20211114145448125" style="zoom: 67%;"></p>
+</li>
+<li><p>&#x4E0D;&#x5E94;&#x53D1;&#x9001; ICMP &#x5DEE;&#x9519;&#x62A5;&#x544A;&#x62A5;&#x6587;&#x7684;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
+<ol>
+<li>&#x5BF9; ICMP &#x5DEE;&#x9519;&#x62A5;&#x544A;&#x62A5;&#x6587;&#x4E0D;&#x518D;&#x53D1;&#x9001; ICMP &#x5DEE;&#x9519;&#x62A5; &#x544A;&#x62A5;&#x6587;</li>
+<li>&#x5BF9;&#x7B2C;&#x4E00;&#x4E2A;&#x5206;&#x7247;&#x7684;&#x6570;&#x636E;&#x62A5;&#x7247;&#x7684;&#x6240;&#x6709;&#x540E;&#x7EED;&#x6570;&#x636E;&#x62A5;&#x7247; &#x90FD;&#x4E0D;&#x53D1;&#x9001; ICMP &#x5DEE;&#x9519;&#x62A5;&#x544A;&#x62A5;&#x6587;</li>
+<li>&#x5BF9;&#x5177;&#x6709;&#x591A;&#x64AD;&#x5730;&#x5740;&#x7684;&#x6570;&#x636E;&#x62A5;&#x90FD;&#x4E0D;&#x53D1;&#x9001; ICMP &#x5DEE;&#x9519; &#x62A5;&#x544A;&#x62A5;&#x6587;</li>
+<li>&#x5BF9;&#x5177;&#x6709;&#x7279;&#x6B8A;&#x5730;&#x5740;&#xFF08;&#x5982;127.0.0.0 &#x6216; 0.0.0.0&#xFF09;&#x7684; &#x6570;&#x636E;&#x62A5;&#x4E0D;&#x53D1;&#x9001; ICMP &#x5DEE;&#x9519;&#x62A5;&#x544A;&#x62A5;&#x6587;</li>
+</ol>
+</li>
+<li><p>ICMP&#x8BE2;&#x95EE;&#x62A5;&#x6587;&#xFF1A;&#x91C7;&#x7528;&#x8BF7;&#x6C42;/&#x5E94;&#x7B54;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x7528;&#x6765; &#x8BF7;&#x6C42;&#x4E00;&#x4E9B;&#x6D88;&#x606F;&#x3002;&#x53EF;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ol>
+<li><strong>&#x56DE;&#x9001;&#x8BF7;&#x6C42;&#x548C;&#x56DE;&#x7B54;&#x62A5;&#x6587;</strong> &#xFF1A;&#x7531;&#x4E3B;&#x673A;&#x6216;&#x8005;&#x8DEF;&#x7531;&#x5668;&#x5411;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x76EE;&#x7684;&#x4E3B;&#x673A;&#x53D1;&#x51FA;&#x8BE2;&#x95EE;&#xFF0C;&#x6536;&#x5230; &#x6B64;&#x62A5;&#x6587;&#x7684;&#x673A;&#x5668;&#x7ED9;&#x6E90;&#x4E3B;&#x673A;&#x5E94;&#x7B54;&#x3002;&#x4E00;&#x822C;&#x7528;&#x6765;&#x6D4B;&#x8BD5;&#x76EE;&#x7684;&#x673A;&#x5668;&#x662F;&#x5426; &#x53EF;&#x8FBE;&#x3002;&#x5982;&#xFF1A;PING&#x3001;Traceroute&#x3010;&#x7528;&#x6765;&#x8DDF;&#x8E2A;&#x4E00;&#x4E2A;&#x5206;&#x7EC4;&#x4ECE;&#x6E90;&#x70B9;&#x5230;&#x7EC8;&#x70B9;&#x7684;&#x8DEF;&#x5F84;&#x3011;</li>
+<li><strong>&#x65F6;&#x95F4;&#x6233;&#x8BF7;&#x6C42;&#x548C;&#x56DE;&#x7B54;&#x62A5;&#x6587;</strong> &#xFF1A;&#x8BF7;&#x6C42;&#x67D0;&#x4E2A;&#x4E3B;&#x673A;&#x6216;&#x8DEF;&#x7531;&#x5668;&#x56DE;&#x7B54;&#x5F53;&#x524D;&#x7684;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x3002;&#x7528;&#x4E8E;&#x65F6;&#x949F;&#x540C;&#x6B65;&#x6216;&#x6D4B;&#x91CF;&#x65F6;&#x95F4;&#x3002;</li>
+</ol>
+</li>
+<li><p>&#x8DEF;&#x7531;&#x7B97;&#x6CD5;</p>
+<ol>
+<li><strong>&#x9759;&#x6001;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x7B56;&#x7565;</strong>&#xFF1A;&#x5373;<strong>&#x975E;&#x81EA;&#x9002;&#x5E94;&#x8DEF;&#x7531;&#x9009;&#x62E9;</strong>&#xFF0C;&#x5176; &#x7279;&#x70B9;&#x662F;&#x7B80;&#x5355;&#x548C;&#x5F00;&#x9500;&#x8F83;&#x5C0F;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x53CA;&#x65F6;&#x9002;&#x5E94;&#x7F51;&#x7EDC; &#x72B6;&#x6001;&#x7684;&#x53D8;&#x5316;&#x3002;</li>
+<li><strong>&#x52A8;&#x6001;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x7B56;&#x7565;</strong>&#xFF1A;&#x5373;<strong>&#x81EA;&#x9002;&#x5E94;&#x8DEF;&#x7531;&#x9009;&#x62E9;</strong>&#xFF0C;&#x5176;&#x7279; &#x70B9;&#x662F;&#x80FD;&#x8F83;&#x597D;&#x5730;&#x9002;&#x5E94;&#x7F51;&#x7EDC;&#x72B6;&#x6001;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x4F46;&#x5B9E;&#x73B0;&#x8D77; &#x6765;&#x8F83;&#x4E3A;&#x590D;&#x6742;&#xFF0C;&#x5F00;&#x9500;&#x4E5F;&#x6BD4;&#x8F83;&#x5927;&#x3002;</li>
+</ol>
+</li>
+<li><p>&#x5206;&#x5C42;&#x6B21;&#x7684;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x534F;&#x8BAE;&#xFF1A;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x534F;&#x8BAE;&#x4E3B;&#x8981;&#x662F;&#x81EA;&#x9002;&#x5E94;&#x7684;&#xFF08;&#x5373;&#x52A8; &#x6001;&#x7684;&#xFF09;&#x3001;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x534F;&#x8BAE;&#x3002;</p>
+</li>
+<li><p>&#x4E24;&#x5927;&#x7C7B;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x534F;&#x8BAE;</p>
+<ol>
+<li>&#x5185;&#x90E8;&#x7F51;&#x5173;&#x534F;&#x8BAE; IGP (Interior Gateway Protocol) &#xFF1A;&#x5728;&#x4E00;&#x4E2A;&#x81EA;&#x6CBB;&#x7CFB;&#x7EDF;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x534F;&#x8BAE;&#x3002;&#x4F8B;&#x5982;&#xFF1A;RIP&#x3001;OSPF</li>
+<li>&#x5916;&#x90E8;&#x7F51;&#x5173;&#x534F;&#x8BAE; EGP (External Gateway Protocol)&#xFF1A;&#x5C06;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x4FE1;&#x606F;&#x4F20;&#x9012;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x81EA;&#x6CBB;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;&#x4F8B;&#x5982;&#xFF1A;BGP-4</li>
+</ol>
+</li>
+<li><p>&#x81EA;&#x6CBB;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x7684;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x4E5F;&#x53EB;&#x505A;<strong>&#x57DF;&#x95F4;&#x8DEF;&#x7531;&#x9009;&#x62E9; (interdomain routing)</strong>&#xFF0C;&#x5728;&#x81EA;&#x6CBB;&#x7CFB;&#x7EDF;&#x5185;&#x90E8;&#x7684;&#x8DEF;&#x7531;&#x9009; &#x62E9;&#x53EB;&#x505A;<strong>&#x57DF;&#x5185;&#x8DEF;&#x7531;&#x9009;&#x62E9; (intradomain routing)</strong> </p>
+</li>
+<li><p>RIP&#xFF1A;Routing Information Protocol &#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x534F;&#x8BAE;</p>
+<ol>
+<li>RIP &#x662F;&#x4E00;&#x79CD;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x3001;&#x57FA;&#x4E8E;&#x8DDD;&#x79BB;&#x5411;&#x91CF;&#x7684;&#x52A8;&#x6001;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x534F;&#x8BAE;</li>
+<li>&#x6BCF;&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x5668;&#x90FD;&#x8981;&#x7EF4;&#x62A4;&#x4ECE;&#x5B83;&#x81EA;&#x5DF1;&#x5230;&#x5176;&#x4ED6;&#x6BCF;&#x4E00;&#x4E2A;&#x76EE;&#x7684;&#x7F51;&#x7EDC;&#x7684;&#x552F;&#x4E00;&#x6700;&#x4F73;&#x8DDD;&#x79BB;&#x8BB0;&#x5F55;&#xFF0C;&#x56FA;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x4E0E;&#x76F8;&#x90BB;&#x7684;&#x8DEF;&#x7531;&#x5668;&#x4EA4;&#x6362;&#x8DEF;&#x7531;&#x4FE1;&#x606F;</li>
+<li>RIP &#x5141;&#x8BB8;&#x4E00;&#x6761;&#x8DEF;&#x5F84;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x5305;&#x542B; 15 &#x4E2A;&#x8DEF;&#x7531;&#x5668;&#xFF0C;&#x8DDD;&#x79BB;&#x4E3A;16&#x65F6;&#x8868;&#x793A;&#x4E0D;&#x53EF;&#x8FBE;</li>
+<li>&#x4F7F;&#x7528;&#x8DDD;&#x79BB;&#x5411;&#x91CF;&#x7B97;&#x6CD5;&#x3010;&#x57FA;&#x7840;&#x662F; Bellman-Ford &#x7B97;&#x6CD5;&#x3011;</li>
+<li>RIP&#x534F;&#x8BAE;&#x62A5;&#x6587;&#x5B58;&#x4E8E;UDP&#x6570;&#x636E;&#x62A5;&#x7684;&#x6570;&#x636E;&#x90E8;&#x5206;</li>
+<li>&#x4F18;&#x70B9;&#xFF1A;&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#xFF0C;&#x5F00;&#x9500;&#x8F83;&#x5C0F;</li>
+<li>&#x7F3A;&#x70B9;&#xFF1A;<ol>
+<li>RIP &#x9650;&#x5236;&#x4E86;&#x7F51;&#x7EDC;&#x7684;&#x89C4;&#x6A21;&#xFF0C;&#x5B83;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x6700;&#x5927;&#x8DDD;&#x79BB;&#x4E3A; 15 &#xFF08;16 &#x8868;&#x793A;&#x4E0D;&#x53EF;&#x8FBE;&#xFF09;</li>
+<li>&#x8DEF;&#x7531;&#x5668;&#x4E4B;&#x95F4;&#x4EA4;&#x6362;&#x7684;&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x662F;&#x8DEF;&#x7531;&#x5668;&#x4E2D;&#x7684;&#x5B8C;&#x6574;&#x8DEF;&#x7531; &#x8868;&#xFF0C;&#x56E0;&#x800C;&#x968F;&#x7740;&#x7F51;&#x7EDC;&#x89C4;&#x6A21;&#x7684;&#x6269;&#x5927;&#xFF0C;&#x5F00;&#x9500;&#x4E5F;&#x5C31;&#x589E;&#x52A0;&#x3002;</li>
+<li>&#x5F53;&#x7F51;&#x7EDC;&#x51FA;&#x73B0;&#x6545;&#x969C;&#x65F6;&#xFF0C;&#x8981;&#x7ECF;&#x8FC7;&#x6BD4;&#x8F83;&#x957F;&#x7684;&#x65F6;&#x95F4;&#x624D;&#x80FD;&#x5C06;&#x6B64; &#x4FE1;&#x606F;&#x4F20;&#x9001;&#x5230;&#x6240;&#x6709;&#x7684;&#x8DEF;&#x7531;&#x5668;&#x3010;<strong>&#x597D;&#x6D88;&#x606F;&#x4F20;&#x64AD;&#x5F97;&#x5FEB;&#xFF0C;&#x574F;&#x6D88;&#x606F;&#x4F20;&#x64AD;&#x5F97;&#x6162;</strong>&#x3011;&#xFF08;&#x6162;&#x6536;&#x655B;&#x95EE;&#x9898;&#xFF09;</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>OSPF&#xFF1A;Open Shortest Path First &#xFF0C;&#x5F00;&#x653E;&#x6700;&#x77ED;&#x8DEF;&#x5F84;&#x4F18;&#x5148;</p>
+<ol>
+<li><p>&#x91C7;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x94FE;&#x8DEF;&#x72B6;&#x6001;&#x534F;&#x8BAE; (link state  protocol)</p>
+</li>
+<li><p>&#x5411;&#x672C;&#x81EA;&#x6CBB;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x8DEF;&#x7531;&#x5668;&#x53D1;&#x9001;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x6D2A;&#x6CDB;&#x6CD5;&#x3002;</p>
+</li>
+<li><p>&#x53D1;&#x9001;&#x7684;&#x4FE1;&#x606F;&#x5C31;&#x662F;<strong>&#x4E0E;&#x672C;&#x8DEF;&#x7531;&#x5668;&#x76F8;&#x90BB;&#x7684;&#x6240;&#x6709;&#x8DEF;&#x7531;&#x5668;&#x7684;&#x94FE;&#x8DEF;&#x72B6;&#x6001;</strong>&#xFF0C;&#x4F46;&#x8FD9;&#x53EA;&#x662F;&#x8DEF;&#x7531;&#x5668;&#x6240;&#x77E5;&#x9053;&#x7684;&#x90E8;&#x5206;&#x4FE1;&#x606F;</p>
+</li>
+<li><p>&#x53EA;&#x6709;&#x5F53;&#x94FE;&#x8DEF;&#x72B6;&#x6001;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x8DEF;&#x7531;&#x5668;&#x624D;&#x7528;&#x6D2A;&#x6CDB;&#x6CD5;&#x5411;&#x6240; &#x6709;&#x8DEF;&#x7531;&#x5668;&#x53D1;&#x9001;&#x6B64;&#x4FE1;&#x606F;</p>
+<p><img src="images/image-20211114154109616.png" alt="image-20211114154109616" style="zoom:67%;"></p>
+</li>
+<li><p>OSPF &#x4E0D;&#x7528; UDP &#x800C;&#x662F;&#x76F4;&#x63A5;&#x7528; IP &#x6570;&#x636E;&#x62A5;&#x4F20;&#x9001;</p>
+</li>
+<li><p>OSPF &#x5206;&#x7EC4;&#x4F7F;&#x7528;24&#x5B57;&#x8282;&#x7684;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x9996;&#x90E8;</p>
+</li>
+<li><p>&#x7279;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x8D1F;&#x8F7D;&#x5747;&#x8861; (load balancing)&#xFF1A;&#x5230;&#x540C;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x6709;&#x591A; &#x6761;&#x76F8;&#x540C;&#x4EE3;&#x4EF7;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x901A;&#x4FE1;&#x91CF;&#x5206;&#x914D;&#x7ED9;&#x8FD9;&#x51E0;&#x6761; &#x8DEF;&#x5F84;&#x3002;</li>
+<li>&#x6BCF;&#x4E00;&#x4E2A;&#x94FE;&#x8DEF;&#x72B6;&#x6001;&#x90FD;&#x5E26;&#x4E0A;&#x4E00;&#x4E2A; 32 &#x4F4D;&#x7684;&#x5E8F;&#x53F7;&#xFF0C;&#x5E8F;&#x53F7; &#x8D8A;&#x5927;&#x72B6;&#x6001;&#x5C31;&#x8D8A;&#x65B0;&#x3002;&#x89E3;&#x51B3;&#x91CD;&#x590D;&#x5206;&#x7EC4;&#x95EE;&#x9898;&#x3002;</li>
+<li>OSPF &#x6CA1;&#x6709;&#x201C;&#x574F;&#x6D88;&#x606F;&#x4F20;&#x64AD;&#x5F97;&#x6162;&#x201D;&#x7684;&#x95EE;&#x9898;</li>
+<li>&#x53EA;&#x6D89;&#x53CA;&#x5230;&#x4E0E;&#x76F8;&#x90BB;&#x8DEF; &#x7531;&#x5668;&#x7684;&#x8FDE;&#x901A;&#x72B6;&#x6001;&#xFF0C;&#x56E0;&#x800C;&#x4E0E;&#x6574;&#x4E2A;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x89C4;&#x6A21;&#x5E76;&#x65E0;&#x76F4;&#x63A5;&#x5173;&#x7CFB;&#x3002;&#x9002;&#x5408;&#x5927;&#x89C4;&#x6A21;&#x7F51;&#x7EDC;</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>BGP&#xFF1A; (Border Gateway Protocol)(&#x8FB9;&#x754C;&#x7F51;&#x5173;&#x534F;&#x8BAE;)</p>
+<ol>
+<li>&#x91C7;&#x7528;<strong>&#x8DEF;&#x5F84;&#x5411;&#x91CF;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x534F;&#x8BAE;</strong>&#x3002;</li>
+<li>&#x4E0E;&#x5176;&#x4ED6;AS&#x7684;&#x90BB;&#x7AD9;BGP&#x53D1;&#x8A00;&#x4EBA;&#x4EA4;&#x6362;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x4EA4;&#x6362;&#x7684;&#x4FE1;&#x606F;&#x662F;&#x7F51;&#x7EDC;&#x53EF;&#x8FBE;&#x6027;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5373;&#x5230;&#x8FBE;&#x67D0;&#x4E2A;&#x7F51;&#x7EDC;&#x6240; &#x8981;&#x7ECF;&#x8FC7;&#x7684;&#x4E00;&#x7CFB;&#x5217;AS&#x3002;</li>
+<li>&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x66F4;&#x65B0;&#x6709;&#x53D8;&#x5316;&#x7684;&#x90E8;&#x5206;&#x3002;</li>
+<li>&#x5B58;&#x653E;&#x4E8E;TCP&#x62A5;&#x6587;&#x6570;&#x636E;&#x90E8;&#x5206;</li>
+</ol>
+</li>
+<li><p>&#x8DEF;&#x7531;&#x5668;&#xFF1A;&#x8F6C;&#x53D1;&#x5206;&#x7EC4;&#x3001;&#x8DEF;&#x7531;&#x9009;&#x62E9;</p>
+<ol>
+<li>&#x8DEF;&#x7531;&#x8868;&#x662F;&#x6839;&#x636E;&#x8DEF;&#x7531;&#x9009;&#x62E9;&#x7B97;&#x6CD5;&#x5F97;&#x51FA;&#x7684;&#x3002;&#x800C;&#x8F6C;&#x53D1;&#x8868;&#x662F;&#x4ECE;&#x8DEF; &#x7531;&#x8868;&#x5F97;&#x51FA;&#x7684;</li>
+</ol>
+</li>
+<li><p>IP&#x591A;&#x64AD;&#xFF1A;&#x4E00;&#x5BF9;&#x591A;&#x901A;&#x4FE1;</p>
+<p><img src="images/image-20211114163313934.png" alt="image-20211114163313934" style="zoom:67%;"></p>
+</li>
+<li><p>&#x591A;&#x64AD;&#x6570;&#x636E;&#x62A5;&#x548C;&#x4E00;&#x822C;&#x7684; IP &#x6570;&#x636E;&#x62A5;&#x7684;&#x533A;&#x522B;&#x5C31;&#x662F;&#x5B83;&#x4F7F; &#x7528; <strong>D &#x7C7B; IP &#x5730;&#x5740;</strong>&#x4F5C;&#x4E3A;&#x76EE;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5E76;&#x4E14;&#x9996;&#x90E8;&#x4E2D;&#x7684;<strong>&#x534F;&#x8BAE;&#x5B57;&#x6BB5;&#x503C;&#x662F; 2</strong>&#xFF0C;&#x8868;&#x660E;&#x4F7F;&#x7528;<strong>&#x7F51;&#x9645;&#x7EC4;&#x7BA1;&#x7406;&#x534F;&#x8BAE; IGMP</strong>&#x3002;</p>
+</li>
+<li><p>&#x4EE5;&#x592A;&#x7F51;&#x786C;&#x4EF6;&#x5730;&#x5740;&#x5B57;&#x6BB5;&#x4E2D;&#x7684;&#x7B2C;1&#x5B57;&#x8282;&#x7684;&#x6700;&#x4F4E;&#x4F4D;(I/G&#x4F4D;)&#x4E3A;1&#x65F6;&#x4E3A;&#x591A;&#x64AD; &#x5730;&#x5740;&#x3002;</p>
+<p><img src="images/image-20211114163716209.png" alt="image-20211114163716209" style="zoom:67%;"></p>
+<p><img src="images/image-20211114163733107.png" alt="image-20211114163733107" style="zoom:67%;"></p>
+</li>
+<li>IGMP&#xFF1A;&#x7F51;&#x9645;&#x7EC4;&#x7BA1;&#x7406;&#x534F;&#x8BAE; IGMP (Internet Group Management  Protocol)</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第四章（上）.html" class="navigation navigation-prev " aria-label="Previous page: 第四章（上）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="第五章.html" class="navigation navigation-next " aria-label="Next page: 第五章">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第四章（下）","level":"1.6","depth":1,"next":{"title":"第五章","level":"1.7","depth":1,"path":"第五章.md","ref":"第五章.md","articles":[]},"previous":{"title":"第四章（上）","level":"1.5","depth":1,"path":"第四章（上）.md","ref":"第四章（上）.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第四章（下）.md","mtime":"2021-11-14T08:42:04.021Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-16T04:06:41.194Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
